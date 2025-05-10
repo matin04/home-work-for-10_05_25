@@ -1,31 +1,25 @@
-# 📌 Задача 7: Работа со строками и числами
+# 📌 Задача 8: Дубликаты и копии
 
-# mixed = [3, 'hi', 5, 'hello', 2, 'hi']
+# items = ['pen', 'book', 'pen', 'ruler', 'pen']
 # Задания:
 
-# Посчитай, сколько раз встречается 'hi'.
+# Скопируй список в copy_items.
 
-# Удали все вхождения 'hi' (в цикле, с remove()).
+# Удали все вхождения 'pen' из оригинального списка.
 
-# Добавь в конец 'bye' и число 0.
+# Вставь 'notebook' на вторую позицию.
 
-# Найди индекс 'hello' и вставь 'welcome' перед ним.
-
-# Выведи итоговый список.
+# Выведи оба списка — сравни их  .
 
 
 
-mixed = [3, 'hi', 5, 'hello', 2, 'hi']
-print(mixed)
-k=mixed.count('hi')
-print(k)
-for i in mixed[:]:
-    if i=='hi':
-        mixed.remove(i)
-print(mixed)
-mixed.extend(['bye',0])
-print(mixed)
-i=mixed.index('hello')
-print(i)
-mixed.insert(2,'welcome')
-print(mixed)
+
+
+items = ['pen', 'book', 'pen', 'ruler', 'pen']
+copy_items=items.copy()
+print(copy_items)
+while 'pen' in items:
+    items.remove('pen')
+print(items)
+items.insert(1,'notebook')
+print(items)
